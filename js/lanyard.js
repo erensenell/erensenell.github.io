@@ -44,16 +44,16 @@ function update_presence() {
     }
 
     if (api.d.discord_status === "dnd") {
-        statusContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-2"></span>Do not Disturb - on discord status`;
+        statusContent.innerHTML = `<span class="w-3 h-3 bg-red-500 rounded-full inline-flex ml-1 mr-2"></span>Rahatsız Etmeyin - Discord durumu`;
 
     } else if (api.d.discord_status === "idle") {
-        statusContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-2"></span>Idle - on discord status`;
+        statusContent.innerHTML = `<span class="w-3 h-3 bg-yellow-500 rounded-full inline-flex ml-1 mr-2"></span>Boşta - Discord durumu`;
 
     } else if (api.d.discord_status === "online") {
-        statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-2"></span>Online - on discord status`;
+        statusContent.innerHTML = `<span class="w-3 h-3 bg-green-500 rounded-full inline-flex ml-1 mr-2"></span>Çevrimiçi - Discord durumu`;
 
     } else if (api.d.discord_status === "offline") {
-        statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-2"></span>Offline - on discord status `;
+        statusContent.innerHTML = `<span class="w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-2"></span>Çevrimdışı - Discord durumu `;
 
     } else {
         statusContent.innerHTML = `<div class="animate-pulse"><span class="stat-text w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-2"></span>Loading.....</span> </div>`;
