@@ -1,250 +1,104 @@
 <!DOCTYPE html>
-<html lang="tr">
-<!-- erensenell.github.io -->
-
+<html lang="en">
 <head>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta data-n-head="ssr" data-hid="description" name="description" content="Eren Şenel's Portfolio">
-    <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="Eren Şenel - Home">
-    <meta data-n-head="ssr" data-hid="author" name="author" content="Eren Şenel">
-    <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Eren Şenel - Home">
-    <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="Merhaba ben Eren Şenel 17 yaşındayım 4 yıldır yazılımla uğraşıyorum.">
-    <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://emin.exe.tk/assets/avatar.png">
-    <meta data-n-head="ssr" data-hid="og:url" property="og:url" content="https://erensenell.github.io">
-    <meta data-n-head="ssr" data-hid="og:type" property="og:type" content="website">
-    <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Eren Şenel">
-    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eren</title>
 
-
-
-    <title>Eren Şenel</title>
-    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/avatar.png">
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script>
-        console.log("%c" + "Heyyyooo :)", "color: #7289DA; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;");
-        console.log("%c" + "Selam coder ab bakıom ki src kısmına gelmişsin githubumda açık kaynağını paylaşıcam zahmet etme beaa github.com/erensenell/ ", "color: #7289DA; -webkit-text-stroke: 0.5px black; font-size: 22px; font-weight: bold;");
-    </script>
+  <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/theme.css">
+  <link rel="stylesheet" href="./styles/tooltip.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
+<body class="light">
 
-<body>
+  <div class="main">
+    <hr class="pad">
 
-    <header>
-        <nav class="container">
-            <a href="/" class="logo">Eren Şenel </a>
+    <content>
+      <top>
+        <div-img class="avatar" loading>&thinsp;</div-img>
+        <div-bio>
+          <bio-title>Heyy selamlar, ben Eren👋</bio-title>
+          <bio-text>Ben Eren, 3 yıldan uzun süredir discord botları geliştiriyorum. Kodlamanın mantığını ve yapısını seviyorum. Her zaman verimli ve düzenli kod yazmaya çalışıyorum. Discord botlarının yanında python ve C# geliştiriciliği de öğreniyorum.</bio-text>
+        </div-bio>
+      </top>
+      <bottom>
+        <ul>
+          <li>
+            <status><span>&thinsp;</span> <p loading>&thinsp;</p></status>
+          </li>
+          <li>
+            <spotify>
+              <logo>
+                <svg loading xmlns="http://www.w3.org/2000/svg" height="168px" width="168px" version="1.1" viewBox="0 0 168 168">
+                  <path fill="green" d="m83.996 0.277c-46.249 0-83.743 37.493-83.743 83.742 0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l0.001-0.004zm38.404 120.78c-1.5 2.46-4.72 3.24-7.18 1.73-19.662-12.01-44.414-14.73-73.564-8.07-2.809 0.64-5.609-1.12-6.249-3.93-0.643-2.81 1.11-5.61 3.926-6.25 31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-0.903-8.148-4.35-1.04-3.453 0.907-7.093 4.354-8.143 30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-0.001zm0.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219-1.254-4.14 1.08-8.513 5.221-9.771 29.581-8.98 78.756-7.245 109.83 11.202 3.73 2.209 4.95 7.016 2.74 10.733-2.2 3.722-7.02 4.949-10.73 2.739z"/>
+                </svg>
+              </logo>
+              <p loading>&thinsp;</p>
+            </spotify>
+          </li>
+          <li>
+            <location loading>
+              <span class="material-icons"></span>
+              <a>&thinsp;</a>
+            </location>
+          </li>
+          <li>
+            <links loading>
+              <a>&thinsp;</a>
+            </links>
+          </li>
+        </ul>
 
-            <div class="links">
-                <ul class="list">
-                    <li class="item">
-                        <a href="#home" class="nav-link">Anasayfa</a>
-                    </li>
-                    <li class="item">
-                        <a href="https://github.com/erensenell" class="nav-link">Projelerim</a>
-                    </li>
-                    <li class="item">
-                        <a href="#İletişim" class="nav-link">İletişim</a>
-                    </li>
+        <hr>
 
-                    <i class="uil uil-moon toggle-btn darkmode-btn"></i>
-                </ul>
+        <blocks>
+          <div class="active" onclick="changeBlock(0)" id="0">
+            <block-title>Projelerim</block-title>
+            <extent>
+              <projects>
 
-            </div>
-            <div class="hamburger-menu">
-                <i class="uil uil-bars"></i>
-            </div>
-        </nav>
-    </header>
+                <project style="border-left: 5px solid var(--secondary-color);">
+                  <project-title onclick="window.open('https://discord.gg/J2QZnWydtn', '_blank')">Yazılım Koloniği</project-title>
+                  <project-description>Yazılım Koloniği, Uzun süre önce geliştirdiğim bu bot yüzlerce kullanıcıya hizmet verdi. Eğer Projen vs varsa 7/24 aktif edebilir eğer bir projeniz yoksa sunuzdan altyapılar alıp kullanabilirsiniz....</project-description>
+                  <project-image style="background-image: url(https://cdn.discordapp.com/attachments/1034877996038885447/1058380336490369124/Yazlm_Kolonigi.png)", onclick="window.open('https://discord.gg/aVrZVkHYam', '_blank')">&thinsp;</project>                
+                </project>
 
-    <main>
-        <section class="showcase-area" id="home">
-            <div class="container">
-                <div class=" headline info">
-                    <h3 class="heading-1">Web designer & Front-end Developer</h3>
-                    <h1 class="heading-2">Eren Şenel</h1>
-                    <p class="text-1">Merhaba ben Eren , lise öğrencisiyim yazılımla uğraşmayı severim boş zamanlarımda kod yazarım
-                        </p>
+              </projects>
+            </extent>
+          </div>
+          <div onclick="changeBlock(1)" id="1">
+            <block-title>GitHub</block-title>
+            <extent>
+              <github loading>&thinsp;</github>
+            </extent>
+          </div>
+          <div onclick="window.open('https://github.com/erensenell', '_blank')">
+            <block-title><span class="material-icons" tippy="Github Adresim">link</span></block-title>
+          </div>
+          <div onclick="changeTheme()">
+            <block-title><span class="material-icons" tippy="Temayı değiş">dark_mode</span></block-title>
+          </div>
+        </blocks>
 
-                            <p id="statusContent" class="stat-text mt-2 animate__animated animate__flash">
-                                <span id="statusContent"> <span class="stat-text w-3 h-3 bg-gray-500 rounded-full inline-flex ml-1 mr-2"></span>Loading.....</span>
-                            </p>
+        <block-content></block-content>
+        
+      </bottom>
+    </content>
 
-                            <p style="margin: 10px; font-size: 17px; font-weight: 500; color: green; ">
-           <span id="spotfystatus"> <i class="fa-brands fa-spotify "></i> <span class="animate-pulse stat-text w-3 h-3 inline-flex ml-1 mr-2 ">Loading....</span></span>
-                            </p>
+  </div>
 
-                            <p style="font-size:17px; font-weight:500; ">                            </p>
-                    
-                            <div class="cta"></a>
-                                <a href="https://github.com/erensenell" target="_blank" class="secondary-btn">
-                                    <i class="fa-brands fa-github"></i> Github
-                                </a>
-
-                            </div>
-                </div>
-                <div class="image">
-                    <img src="./assets/avatar.png" alt="Eren">
-
-                </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="container">
-                <div class="about-grid"></div>
-                <div class="about-info">
-                    <h2 class="about-h2">Hakkımda</h2>
-                    <p class="about-p heading-1">
-                        Ben bir Developer'ım, kapsamlı web siteleri yazıyorum, çeşitli discord botlarım var. Müzik dinlemeyi severim, üniversiteye hazırlanıyorum. 16 yaşındayım ve lise öğrencisiyim.</p>
-
-                </div>
-            </div>
-        </section>
-        <br><br><br><br>
-        <section class="techno">
-            <h2 class="tech-h2">kullandığım teknolojiler</h2>
-            <div class="all">
-                <div class="htmll">
-                    <img src="assets/html.svg" alt="">
-                    <p>
-                        HTML
-                    </p>
-                </div>
-                <div class="css">
-                    <img src="./assets/css.svg" alt="">
-                    <p>
-                        CSS
-                    </p>
-                </div>
-                <div class="js">
-                    <img src="./assets/javascript.svg" alt="">
-                    <p>
-                        Javascript
-                    </p>
-                </div>
-                <div class="bootstrap">
-                    <img src="./assets/bootstrap.svg" alt="">
-                    <p>
-                        Bootstrap
-                    </p>
-                </div>
-                <div class="react">
-                    <img src="./assets/react.svg" alt="">
-                    <p>
-                        React
-                    </p>
-                </div>
-                <div class="nodejs">
-                    <img src="./assets/nodejs-icon.svg" alt="">
-                    <p>
-                        Node.js
-                    </p>
-                </div>
-
-                <div class="tailwnd">
-                    <img src="./assets/Tailwind_CSS_Logo.svg.png" alt="">
-                    <p>
-                        tailwind css
-                    </p>
-                </div>
-
-
-                <div class="discordjs">
-                    <i class="uil uil-discord">
-                        Discord.js
-                    </i>
-                </div>
-
-                <div class="github">
-                    <i class="uil uil-github">
-                        Github
-                    </i>
-                </div>
-
-                <div class="figma">
-                    <img src="./assets/Figma-logo.svg" alt="">
-                    <p>Figma</p>
-                </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="İletişim">
-            <div class="container">
-                <div class="contact-info">
-                    <h2 class="heading-1">İletişime Geç</h2>
-                    <p class="text-1">
-                        Benimle iletişime geçmek isterseniz mail atabilir veya discord üzerinden bana ulaşabilirsiniz.
-
-                </div>
-                <form action="https://formspree.io/f/moqrlaab" method="POST" class="contact-form">
-                    <p style="color: var(--heading-color);
-                    font-size: 1rem;
-                    letter-spacing: 1px;
-                    border-left: 4px solid var(--main-color-2);
-                    padding: 0.13rem 0.75rem;
-                    font-weight: 600;">Lütfen gereksiz posta göndermeyin!.</p>
-                    <div>
-                        <input type="text" class="form-input" placeholder="Name" name="name" required>
-                    </div>
-                    <div>
-                        <input type="email" name="email" class="form-input" placeholder="codırbirisi@example.com" required>
-                    </div>
-                    <div>
-                        <input type="text" name="Discord id" class="form-input" placeholder="Discord ID : Eren#0001" required>
-                    </div>
-                    <div>
-                        <textarea autocomplete="off" rows="5" maxlength="2000" class="form-input" placeholder="Hey Eren!" name="message" required></textarea>
-                    </div>
-                    <button type="submit" value="Send" class="btn">Gönder</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-            </p>
-                <div class=" container ">
-                    <a href="# "></a>
-                    <p class="footer-text ">Copyright &copy; 2023 Eren Şenel</p>
-                    <ul class="social-media ">
-                        <li>
-                            <a href="https://www.instagram.com/_erensenel_/" target="_blank " class="social-link ">
-                                <i class="uil uil-instagram "></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/aVrZVkHYam" class="social-link ">
-                                <i class="uil uil-discord "></i>
-                            </a>
-                        </li>
-                        <li>
-                        
-                        </li>
-                        <li>
-
-                        </li>
-
-                    </ul>
-                </div>
-    </footer>
-
-    <!--- javascript files -->
-
-    <script src="./js/app.js "></script>
-
-    <script src="./js/lanyard.js "></script>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/2.3.2/moment-duration-format.min.js"></script>
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
-
 </html>
