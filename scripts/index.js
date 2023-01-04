@@ -140,7 +140,7 @@ const changeBlock = id => {
 
 function showGithubRepos() {
   const getGitHubData = async () => {
-    const response = await fetch(properties.github_api.baseURL + 'users/erensenell/repos');
+    const response = await fetch(properties.github_api.baseURL + '/users/erensenell/repos');
     return await response.json();
   };
 
