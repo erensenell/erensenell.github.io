@@ -158,7 +158,7 @@ function showGithubRepos() {
     <a>${repository.stargazers_count}</a>
     </p>
     <p>
-    <a>${properties.languages[`${repository.language}`] || repository.language}</a> <a class="lang">${repository.language}</a>
+    <a>${properties.languages[`${repository.language}`] || repository.language}</a> <a class="lang"></a>
     </p>`;
       $('github').append(repositoryElement);
     });
